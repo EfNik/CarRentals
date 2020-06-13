@@ -6,10 +6,21 @@ const bodyParser = require('body-parser');
 const app=require('../app');
 require("dotenv").config();
 
+// for local db
+// const db=mysql.createConnection({
+//     host:"localhost",
+//     user:"root",
+//     password:"",
+//     database:"car_rentals"
+// })
+
+//Connecting to online hosted db
+
+
 const db=mysql.createConnection({
   host:"sql7.freemysqlhosting.net",
   user:process.env.usern,
-  password: process.env.dbpass,
+  password:process.env.dbpass,
   database:process.env.database
 })
 

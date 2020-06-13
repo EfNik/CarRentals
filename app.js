@@ -34,8 +34,15 @@ app.use(session({
 }));
 
 
+// for local db
+// const db=mysql.createConnection({
+//     host:"localhost",
+//     user:"root",
+//     password:"",
+//     database:"car_rentals"
+// })
 
-//Connecting to db
+//Connecting to online hosted db
 const db=mysql.createConnection({
     host:"sql7.freemysqlhosting.net",
     user:process.env.usern,
