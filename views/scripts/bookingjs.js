@@ -382,12 +382,20 @@ function fromHome(){
         droplocfield.value = droploc;
         categoryfield.value = category;
     
-        if(pickdate){
+
+        if(pickdate && dropdate){
+            pickdatefield.value = pickdate;
+            dropdatefield.value = dropdate;
+            nextPrev(1);
+            
+        }
+        else if(pickdate){
             pickdatefield.value = pickdate;
         }
-        if(dropdate){
+        else if(dropdate){
             dropdatefield.value = dropdate;
         }
+        
     }
 
 
