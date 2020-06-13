@@ -65,7 +65,7 @@ let allCars = carsFile.cars;
 app.post('/carCat/', (req, res) => {
 
     let formCat = req.body.cat;
-    // console.log(req.body);
+
     const {cat,pud,dod}=req.body;
     
     let availModels = [];
