@@ -52,6 +52,8 @@ db.connect( (error)  => {
 });
 
 app.set('view engine','hbs');
+
+
 //define routes
 app.use('/', require('./routes/pages'));
 app.use('/formsRoutes', require('./routes/formsRoutes'));
